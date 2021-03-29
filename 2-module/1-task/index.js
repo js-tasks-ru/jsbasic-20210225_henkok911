@@ -1,3 +1,6 @@
 function sumSalary(salaries) {
-  // ваш код...
+  return Object.values(salaries).reduce((total,money) => {
+    typeof money === 'number' && isFinite(money) ? total += money : total
+    return total
+  },0)
 }
