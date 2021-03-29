@@ -1,4 +1,6 @@
 let calculator = {
+  a: null,
+  b: null,
   read(a,b) {
     this.a = a;
     this.b = b;
